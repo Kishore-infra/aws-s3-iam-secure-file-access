@@ -19,7 +19,7 @@ def get_presigned_url():
         },
         ExpiresIn=3600
     )
-    return jsonify({"url": url})
+    return url
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
