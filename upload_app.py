@@ -1,4 +1,4 @@
-from flask import Flask, jsonify
+from flask import Flask, redirect
 import boto3
 
 app = Flask(__name__)
@@ -19,7 +19,7 @@ def get_presigned_url():
         },
         ExpiresIn=3600
     )
-    return url
+    return redirect(url)
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
