@@ -129,10 +129,12 @@ python upload_app.py
 
  Project Structure
 
-project/
-├── upload_app.py
-├── requirements.txt
-└── README.md
+project
+├
+upload_app.py
+├ 
+requirements.txt
+└ README.md
 
 ---
 
